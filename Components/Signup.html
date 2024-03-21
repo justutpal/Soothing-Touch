@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Signup</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <style>
+      h1 {
+         font-size: 250%;
+         letter-spacing: 7px;
+         text-shadow: 5px 5px 10px wheat;
+      }
+
+      body {
+         background-size: cover;
+      }
+
+      form {
+         border: 0px solid black;
+         margin: 23px 450px;
+         padding: 75px 125px;
+         border-radius: 10px;
+         background-color: rgba(167, 138, 85, 0.3);
+      }
+
+      input[type="text"],
+      input[type="password"],
+      input[type="email"],
+      input[type="number"] {
+         margin-top: 27px;
+         background-color: rgba(167, 138, 85, 0.1);
+         width: 100%;
+         border-radius: 10px;
+         padding: 10px;
+      }
+
+      input[type="submit"] {
+         margin: 20px 0px;
+         width: 100%;
+         border-radius: 10px;
+         padding: 10px;
+         border: 0px;
+         background-color: rgba(157, 130, 80, 0.5);
+         cursor: pointer;
+      }
+
+      a {
+         text-decoration: none;
+         color: black;
+         font-size: 120%;
+         font-family: monospace;
+      }
+
+      #submit:hover {
+         background-color: rgba(157, 130, 80, 0.9);
+      }
+   </style>
+</head>
+
+<body body background="/Resources/backgroundheadmassage.jpg">
+   <img src="/Resources/Mainlogo.png" alt="logo pic" style="width:70px; height:70px;">
+   <h1 align="center">Welcome to Soothing Touch</h1>
+   <form action="">
+      <h2 align="center">SIGN UP</h2>
+      <input type="text" name="fname" id="fname" placeholder=Full-name ; required>
+      <input type="email" name="eaddress" id="eaddress" placeholder=EMAIL-ADDRESS ; required>
+      <input type="number" name="number" id="number" placeholder="Phone-number" required>
+      <input type="password" name="password" id="password" placeholder=Password ; required>
+      <input type="password" name="npassword" id="npassword" placeholder=Confirm-password ; required>
+      <br><br><br>
+      <input type="submit" name="submit" id="submit" value="Sign up">
+      <p align="center">Already have an account? <a
+            href="Login.html"> <b>Log in</b></a></p>
+   </form>
+</body>
+
+</html>
