@@ -115,6 +115,17 @@ body {
   margin: 100px 0 0 0;
 }
 
+.serviceImg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.serviceImg div img {
+    width: 200px;
+    margin: 5px;
+
+}
+
 .service > div {
   text-align: center;
   margin: 0 0 50px 0;
@@ -122,6 +133,17 @@ body {
 
 .oil {
   margin: 100px 0 50px 0;
+}
+
+.imgCollection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imgCollection img {
+    width: 150px;
+    margin: 5px;
 }
 
 .oil h1,
@@ -305,21 +327,33 @@ body {
     grid-row: 3 / 4;
   }
 
+  .service {
+    margin: 50px 0 0 0;
+  }
+
+  .serviceImg div img {
+    width: 150px;
+}
+
+  .oil {
+    margin: 50px 0;
+  }
+
+  .imgCollection img {
+    width: 100px;
+}
+
   .about {
     margin: 50px 30px;
     padding: 0;
   }
   
-  .about h1 {
+  .about h1, .contact h1, .service h1, .oil h1 {
     font-size: 25px;
   }
 
   .contact {
     margin: 30px;
-  }
-
-  .contact h1 {
-    font-size: 25px;
   }
 }
 
@@ -352,21 +386,32 @@ body {
     width: 50%;
   }
 
+  .serviceImg div img {
+    width: 100px;
+}
+
+.imgCollection img {
+    width: 75px;
+}  
+
   .about {
     margin: 40px 10px 10px 10px;
     padding: 0;
   }
   
-  .about h1 {
+  .about h1, .contact h1, .service h1, .oil h1 {
     font-size: 21px;
   }
 
   .contact {
     text-align: center;
     margin: 30px 20px 20px 20px;
+    word-wrap: break-word;
   }
+}
 
-  .contact h1 {
-    font-size: 21px;
-  }
+@media only screen and (max-width: 150px) {
+body {
+    display: none;
+}
 }
