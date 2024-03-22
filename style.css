@@ -3,6 +3,7 @@
   padding: 0;
   text-decoration: none;
   list-style-type: none;
+  transition: all 0.3s;
 }
 
 body {
@@ -116,14 +117,13 @@ body {
 }
 
 .serviceImg {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .serviceImg div img {
-    width: 200px;
-    margin: 5px;
-
+  width: 200px;
+  margin: 5px;
 }
 
 .service > div {
@@ -136,14 +136,14 @@ body {
 }
 
 .imgCollection {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .imgCollection img {
-    width: 150px;
-    margin: 5px;
+  width: 150px;
+  margin: 5px;
 }
 
 .oil h1,
@@ -333,7 +333,7 @@ body {
 
   .serviceImg div img {
     width: 150px;
-}
+  }
 
   .oil {
     margin: 50px 0;
@@ -341,14 +341,17 @@ body {
 
   .imgCollection img {
     width: 100px;
-}
+  }
 
   .about {
     margin: 50px 30px;
     padding: 0;
   }
-  
-  .about h1, .contact h1, .service h1, .oil h1 {
+
+  .about h1,
+  .contact h1,
+  .service h1,
+  .oil h1 {
     font-size: 25px;
   }
 
@@ -381,25 +384,27 @@ body {
     font-size: 16px;
   }
 
-
   #downpic {
     width: 50%;
   }
 
   .serviceImg div img {
     width: 100px;
-}
+  }
 
-.imgCollection img {
+  .imgCollection img {
     width: 75px;
-}  
+  }
 
   .about {
     margin: 40px 10px 10px 10px;
     padding: 0;
   }
-  
-  .about h1, .contact h1, .service h1, .oil h1 {
+
+  .about h1,
+  .contact h1,
+  .service h1,
+  .oil h1 {
     font-size: 21px;
   }
 
@@ -411,7 +416,7 @@ body {
 }
 
 @media only screen and (max-width: 150px) {
-body {
+  body {
     display: none;
-}
+  }
 }
