@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Signup</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <style>
+      * {
+         transition: all 0.3s;
+      }
+
+      h2,
+      p {
+         text-align: center;
+      }
+
+      h1 {
+         text-align: center;
+         font-size: 250%;
+         letter-spacing: 7px;
+         text-shadow: 5px 5px 10px wheat;
+      }
+
+      body {
+         background: url(Resources/backgroundheadmassage.jpg) no-repeat;
+         background-size: cover;
+      }
+
+      .form {
+         border: 0px solid black;
+         width: 400px;
+         margin: 50px auto 25px auto;
+         padding: 50px 100px;
+         border-radius: 10px;
+         background-color: rgba(167, 138, 85, 0.3);
+      }
+
+      input[type="text"],
+      input[type="password"],
+      input[type="email"],
+      input[type="number"] {
+         margin-top: 40px;
+         background-color: rgba(167, 138, 85, 0.1);
+         width: 92%;
+         border-radius: 10px;
+         padding: 10px;
+      }
+
+      input[type="submit"] {
+         margin: 20px 0px;
+         width: 100%;
+         border-radius: 10px;
+         padding: 10px;
+         border: 0px;
+         background-color: rgba(157, 130, 80, 0.5);
+         cursor: pointer;
+      }
+
+      a {
+         text-decoration: none;
+         color: black;
+         font-size: 120%;
+         font-family: monospace;
+      }
+
+      #submit:hover {
+         background-color: rgba(157, 130, 80, 0.9);
+      }
+
+      @media only screen and (max-width: 650px) {
+         .form {
+            width: auto;
+            padding: 50px;
+            margin: 30px 0;
+         }
+
+         h1 {
+            font-size: 200%;
+            letter-spacing: 5px;
+         }
+      }
+
+      @media only screen and (max-width: 400px) {
+         .form {
+            padding: 25px;
+            margin: 20px 0;
+         }
+
+         h1 {
+            font-size: 150%;
+            letter-spacing: 5px;
+         }
+      }
+
+      @media only screen and (max-width: 345px) {
+
+         .form {
+            padding: 25px;
+            margin: 10px 0;
+         }
+      }
+
+      @media only screen and (max-width: 150px) {
+         body {
+            display: none;
+         }
+      }
+   </style>
+</head>
+
+<body>
+
+   <img src="Resources/Mainlogo.png" alt="logo pic" style="width:70px; height:70px;">
+
+   <h1>Welcome to Soothing Touch</h1>
+
+   <form action="" class="form">
+
+      <h2>SIGN UP</h2>
+
+      <input type="text" name="fname" id="fname" placeholder=Full-name ; required>
+
+      <input type="email" name="eaddress" id="eaddress" placeholder=EMAIL-ADDRESS ; required>
+
+      <input type="number" name="number" id="number" placeholder="Phone-number" required>
+
+      <input type="password" name="password" id="password" placeholder=Password ; required>
+
+      <input type="password" name="npassword" id="npassword" placeholder=Confirm-password ; required>
+
+      <br><br><br>
+
+      <input type="submit" name="submit" id="submit" value="Sign up">
+
+      <p>Already have an account? <a href="Login.html"> <b>Log in</b></a></p>
+   </form>
+</body>
+
+</html>

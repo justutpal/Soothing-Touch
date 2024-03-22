@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Login\Signup</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <style>
+      * {
+         transition: all 0.3s;
+      }
+
+      body {
+         background: url(Resources/backgroundheadmassage.jpg) no-repeat;
+         background-size: cover;
+      }
+
+      .logo {
+         width: 70px;
+         height: 70px;
+      }
+
+      .form {
+         border: 0px solid black;
+         width: 400px;
+         margin: 50px auto 25px auto;
+         padding: 50px 100px;
+         border-radius: 10px;
+         background-color: rgba(167, 138, 85, 0.3);
+      }
+
+      h1 {
+         text-align: center;
+      }
+
+      .lowerLogos {
+         border: 0px solid black;
+         width: 100%;
+         border-radius: 10px;
+         background-color: rgba(157, 130, 80, 0.5);
+         padding: 5px;
+      }
+
+
+
+      input[type="text"],
+      input[type="password"] {
+         margin-top: 40px;
+         background-color: rgba(167, 138, 85, 0.1);
+         width: 92%;
+         border-radius: 10px;
+         padding: 10px;
+      }
+
+      .forgot {
+         float: right;
+         margin: 0 0 50px 0;
+      }
+
+      input[type="submit"] {
+         margin: 50px 0 20px 0;
+         border-radius: 10px;
+         padding: 10px 50px;
+         border: 0px;
+         background-color: rgba(157, 130, 80, 0.5);
+         cursor: pointer;
+      }
+
+      #submit:hover {
+         background-color: rgba(157, 130, 80, 0.9);
+      }
+
+
+      p {
+         text-align: center;
+      }
+
+      a {
+         text-decoration: none;
+         color: black;
+         font-size: 120%;
+         font-family: monospace;
+      }
+
+      .lowerLogos {
+         text-align: center;
+         margin: 40px 0;
+      }
+
+      .lowerLogos a img {
+         margin: 10px;
+         width: 30px;
+         height: 30px;
+      }
+
+      @media only screen and (max-width: 650px) {
+         .form {
+            width: auto;
+            padding: 50px;
+         }
+      }
+
+      @media only screen and (max-width: 400px) {
+         .form {
+            padding: 25px;
+         }
+      }
+
+      @media only screen and (max-width: 345px) {
+
+         .form {
+            padding: 25px;
+         }
+
+         input[type="submit"] {
+            margin: -10px 0 20px 0;
+            width: 100%;
+            padding: 10px 0;
+         }
+
+         div {
+            width: 100%;
+         }
+      }
+
+      @media only screen and (max-width: 150px) {
+         body {
+            display: none;
+         }
+      }
+   </style>
+</head>
+
+<body>
+
+   <img src="Resources/Mainlogo.png" alt="logo pic" class="logo">
+
+   <form action="" class="form">
+
+      <h1>LOG IN</h1>
+
+      <input type="text" name="EMAIL" id="EMAIL" placeholder=EMAIL ; required>
+
+      <input type="password" name="password" id="password" placeholder=PASSWORD ; required>
+
+      <a href="#" class="forgot"><b>Forgot password?</b></a>
+
+      <input type="submit" name="submit" id="submit" value="LOGIN">
+
+      <p>OR</p>
+
+      <div class="lowerLogos">
+         <a href="https://www.apple.com"><img src="Resources/Apple-Logo.png" alt=" apple logo"></a>
+         <a href="https://www.facebook.com"><img src="Resources/facebook logo.png" alt="facebook img"></a>
+         <a href="https://www.google.com"><img src="Resources/Google pic.png" alt="google logo"></a>
+      </div>
+
+      <p>Don't have account?<a href="Signup.html"> <b>Register now</b></a></p>
+
+   </form>
+</body>
+
+</html>
